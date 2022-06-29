@@ -17,6 +17,7 @@ public class BrowserMapper extends Mapper<LongWritable, Text, Text, LongWritable
 	private Text mkey = new Text();
 	private LongWritable mvalue = new LongWritable(1);
 	
+// 	Mapper<LongWritable, Text, Text, LongWritable>：文件行号，行内容，浏览器名称，浏览次数
 	@Override
 	protected void map(LongWritable key, Text value, Mapper<LongWritable, Text, Text, LongWritable>.Context context)
 			throws IOException, InterruptedException {
